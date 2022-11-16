@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="nt:unstructured" jcr:title="List of blog" sling:resourceType="cq/gui/components/authoring/dialog" helpPath="https://www.adobe.com/go/aem_cmp_image_v2">
+    <content jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+      <items jcr:primaryType="nt:unstructured">
+        <columns jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns" margin="{Boolean}true">
+            <items jcr:primaryType="nt:unstructured">
+                <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+                    <items jcr:primaryType="nt:unstructured">
+
+                     <tabs jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                     <items jcr:primaryType="nt:unstructured">
+                         <tab1 jcr:title="Tab1" jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+                            <items jcr:primaryType="nt:unstructured">
+                                 <firstblogimage jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/pathfield" name="./blogimage1" fieldLabel="upload blog Image"/>
+                                 <blogcaption jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" name="./caption1" fieldLabel="Enter blog caption"/>
+                                 <bolgtitle jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" name="./blogtitle1" fieldLabel="Enter blog title"/>
+                                <date jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/datepicker" typeHint="Date" name="./blogdate1" fieldLabel="select date" required="{Boolean}true" />
+                            </items>
+                         </tab1>
+
+                         <tab2 jcr:title="Tab2" jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+                             <items jcr:primaryType="nt:unstructured">
+                                 <firstblogimage jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/pathfield" name="./blogimage2" fieldLabel="upload blog Image"/>
+                                 <blogcaption jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" name="./caption2" fieldLabel="Enter blog caption"/>
+                                 <bolgtitle jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" name="./blogtitle2" fieldLabel="Enter blog title"/>
+                                 <date jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/datepicker" name="./blogdate2" fieldLabel="select date"/>
+                             </items>
+                         </tab2>
+                         <tab3 jcr:title="Tab3" jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+                             <items jcr:primaryType="nt:unstructured">
+                                 <firstblogimage jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/pathfield" name="./blogimage3" fieldLabel="upload blog Image"/>
+                                 <blogcaption jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" name="./caption3" fieldLabel="Enter blog caption"/>
+                                 <bolgtitle jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" name="./blogtitle3" fieldLabel="Enter blog title"/>
+                                 <date jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/datepicker" name="./blogdate3" fieldLabel="select date"/>
+                             </items>
+                         </tab3>
+                     </items>
+
+                     </tabs>
+
+                    </items>
+                </column>
+           </items>
+        </columns>
+        </items>
+    </content>
+</jcr:root>

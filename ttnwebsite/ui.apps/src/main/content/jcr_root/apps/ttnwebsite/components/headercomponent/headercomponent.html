@@ -1,0 +1,52 @@
+ <sly data-sly-use.model="com.ttnweb.core.models.HeaderComponentModel">
+     <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+          data-sly-call="${clientlib.all @ categories='ttnwebsite.ttnwebsite'}"/>
+     <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+         <meta name="description" content="">
+         <meta name="author" content="">
+         <link rel="icon" href="assets/img/favicons/favicon.ico">
+
+         <title>Bootcamp Blog</title>
+
+         <link rel="canonical" href="homepage.html">
+
+         <!-- Bootstrap core CSS -->
+         <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+         <link href="dist/css/custom.css">
+         <!-- Custom styles for this template -->
+         <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+     </head>
+
+
+     <header class="blog-header py-3">
+         <div class="row flex-nowrap justify-content-between align-items-center">
+             <div class="col-12 text-center">
+                 <a class="blog-header-logo text-dark" href="#">   <!--# passed in href-->
+                     <img src="${properties.companylogo}" class="ttn-logo">
+                     Bootcamp Blog
+                 </a>
+             </div>
+         </div>
+     </header>
+
+     <div class="nav-scroller py-1 mb-2">
+         <nav class="nav d-flex">
+             <a class="p-2 text-muted" href="#">${model.firstItem}</a> &nbsp <!--&nbsp added here-->
+             <a class="p-2 text-muted" href="#">${model.secondItem}</a>
+         </nav>
+     </div>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <script src="assets/js/vendor/holder.min.js"></script>
+     <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+ </sly>
